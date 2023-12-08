@@ -9,7 +9,7 @@ const Navbar = () => {
   const [togglemenu, setTogglemenu] = useState(false);
 
   return (
-    <nav className="app__navbar">
+    <nav className="app__navbar section__padding">
       <div className="app__navbar-logo">
         <img src={images.gericht} alt="app logo" />
       </div>
