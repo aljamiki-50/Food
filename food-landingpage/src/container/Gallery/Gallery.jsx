@@ -17,16 +17,17 @@ const galleryImages = [
 
 const Gallery = () => {
   const scrollRef = React.useRef(null);
+
   const scroll = (direction) => {
-    // here we destructed the direction..
     const { current } = scrollRef;
-    console.log("Direction:", direction);
-    console.log("ScrollRef Current:", current);
+    // console.log(current);
 
     if (direction === "left") {
-      current.scrollLeft -= 500;
+      current.scrollLeft -= 353;
+      // console.log(current);
     } else {
-      current.scrollLeft += 600;
+      current.scrollLeft += 353;
+      // console.log(current);
     }
   };
 
@@ -50,7 +51,7 @@ const Gallery = () => {
               className="app__gallery-images_card flex__center"
               key={`gallery__image-${index + 1}`}
             >
-              <img src={image} alt="gallery" />
+              <img className="test" src={image} alt="gallery" />
               <BsInstagram className="gallery__image-icon" />
             </div>
           ))}
